@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katz und Maus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="setup-screen">
+            <h1>Katz und Maus</h1>
+            <div class="character-select">
+                <img src="cat.png" class="character-icon" alt="Katze">
+                <div class="input-group">
+                    <label for="katzName">Name der Katze:</label>
+                    <input type="text" id="katzName" placeholder="Katze">
+                </div>
+            </div>
+            <div class="character-select">
+                <img src="mouse.png" class="character-icon" alt="Maus">
+                <div class="input-group">
+                    <label for="mausName">Name der Maus:</label>
+                    <input type="text" id="mausName" placeholder="Maus">
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Spieltyp:</label>
+                <button onclick="selectGameType('plus')">Plus</button>
+                <button onclick="selectGameType('minus')">Minus</button>
+            </div>
+        </div>
+
+        <div id="game-screen" style="display: none;">
+            <div id="player-info">
+                <div id="katz-info"></div>
+                <div id="maus-info"></div>
+            </div>
+            <div id="game-board"></div>
+            <div id="math-display" class="math-display"></div>
+            <div id="controls">
+                <button id="rollDice">Würfeln</button>
+            </div>
+            <div id="dice-display">
+                <div id="dice-value"></div>
+                <div id="current-turn"></div>
+            </div>
+            <div id="message"></div>
+        </div>
+    </div>
+    <div class="signature">Für Doğa</div>
+    <script src="game.js"></script>
+</body>
+</html> 
