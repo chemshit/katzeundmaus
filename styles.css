@@ -5,7 +5,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #BFA700; /* Original Doğa Color: #fde4e4 */
+    background-color: #fde4e4; /* Original Doğa Color: #fde4e4 */
 }
 
 .game-container {
